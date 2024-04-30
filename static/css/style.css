@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    
+}
+
+
+/* NAVIGATION BAR */
+.Navbar{
+    display: flex;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.6);
+    /* background-color: rgb(219, 169, 235); */
+    background-color: rgb(208, 189, 215);    
+    color: black;
+    height: 80px;
+    width:auto;
+    align-items: center;
+    justify-content: center;
+}
+.aside{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#oo{
+    color: red;
+}
+#Book{
+    font-size:40;
+    font-weight: 900;
+    padding-left: 30px;
+}
+
+
+
+.frm{
+    background:#fff;
+    width: 75%;
+    height: 40px;
+    display: flex;
+    border-radius: 30px;
+}
+
+
+.search-text{
+    font-size: 16px;
+    font-weight: bold;
+    /* flex:1; */
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 10px;
+    letter-spacing: 1;
+}
+
+
+
+.search-container{
+    width: 30%;
+    height: 30px;
+    /* background-color: rgb(219, 169, 235);   */
+    background-color: rgb(208, 189, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.frm button{
+    background-color: rgb(255, 255, 255);
+    
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.frm button:hover{
+    background-color: red;
+    color: white;
+}
+
+.frm .fa-solid{
+    align-self: center;
+    padding: 10px 20px;
+    color: #000000;
+}
+
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 15px;
+    
+    
+}
+
+li{
+    padding-inline:  20px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    
+}
+
+
+li:hover{
+    background-color:red;
+    color: whitesmoke;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+/* NAV BAR END */
+
+.slider-container{
+    position: relative;
+    margin-top: 130px;
+
+/* WE CAN ALSO ADD A BACKGROUND IMAGE */
+    /* background-image:url(/static/images/bg/book.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+    
+
+
+.slider-container .wrapper{
+    width: 70vw;
+    height: 60vh;
+    /* border:none; */
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.slider-container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 40s ease-in-out infinite alternate;
+}
+
+.slider-container #slider-img-1{
+    background-image: url(/static/images/anime/juju.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: large;
+    font-weight: bolder;
+}
+.slider-container #slider-img-2{
+    background-image: url(/static/images/fiction/The_guest.jpg);
+    /* background-position: center; */
+    padding: 100px;
+    background-repeat: no-repeat;
+    margin-top:-15px ;
+    width: 50%;
+    letter-spacing: 2px;
+    color: #000000;
+    font-size: large;
+    font-weight: bolder;
+}
+
+/* .slide-txt2{
+    display: inline-flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 550px;
+    /* z-index: -1; 
+}  */
+
+.slider-container #slider-img-3{
+    background-image: url(/static/images/anime/pain.png);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: large;
+    font-weight: bolder;
+}
+.slider-container #slider-img-4{
+    background-image: url(/static/images/anime/solo.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+
+.slider-container .button-holder .button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+.slider-container .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgb(180, 36, 36);
+}
+
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+    
+}
+
+
+
+
+
+
+/* BOOKS DISPLAY */
+
+.sec{
+    margin-top: 160px;
+    padding: 10px 5%;
+    margin-left: 60px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.latest{
+    display: inline-flex;
+    font-size: 50;
+    font-weight: 900;
+    margin-bottom: 40px;
+
+}
+
+.products .card{
+    width: 290px;
+    /* background-color: #dba9eb; */
+    background-color: rgb(208, 189, 215); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 60px;
+    height: 450px;
+    cursor: pointer;
+}
+
+.products .card:hover{
+    transform: scale(1.1);
+    transition: .9s;
+    
+}
+
+#sp{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.products .card img{
+    height: 270px;
+    margin:13px 0 0 30px ;
+
+    width: 80%;
+    border-radius: 15px; 
+}
+.products .card img:hover{
+    filter: blur(1px);
+}
+
+.products .card .book-desc{
+    padding: 5px 20px;
+    color: #424144;
+    opacity: 0.8;
+}
+
+.products .card .book-title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.products .card .book-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.products .card .book-box .price{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+.products .card .book-box .buy-btn{
+    font-size: 13px;
+    background-color: red;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid red;
+    border-radius: 20px;
+    border: none;
+}
+
+.products .card .book-box .buy-btn:hover{
+    cursor: pointer;
+    background-color: red;
+    color: black;
+    border: none;
+
+}
+
+/* ----BOX & NEED MORE SPACE----- */
+/* .products .card .book-box-7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    
+}
+
+.products .card .book-box-7 .price{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+.products .card .book-box-7 .buy-btn{
+    font-size: 13px;
+    background-color: red;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid red;
+    border-radius: 20px;
+    border: none;
+}
+
+.products .card .book-box-7 .buy-btn:hover{
+    cursor: pointer;
+    background-color: red;
+    color: black;
+    border: none;
+
+} */
+/* -----ENDED---- */

@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    
+}
+
+
+/* NAVIGATION BAR */
+.Navbar{
+    display: flex;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.6);
+    /* background-color: rgb(219, 169, 235); */
+    background-color: rgb(208, 189, 215);    
+    color: black;
+    height: 80px;
+    width:auto;
+    align-items: center;
+    justify-content: center;
+}
+.aside{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#oo{
+    color: red;
+}
+#Book{
+    font-size:40;
+    font-weight: 900;
+    padding-left: 30px;
+}
+
+
+
+.frm{
+    background:#fff;
+    width: 120%;
+    height: 40px;
+    display: flex;
+    border-radius: 30px;
+}
+
+
+.search-text{
+    font-size: 16px;
+    font-weight: bold;
+    /* flex:1; */
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 10px;
+    letter-spacing: 1;
+}
+
+
+
+.search-container{
+    width: 30%;
+    height: 30px;
+    /* background-color: rgb(219, 169, 235);   */
+    background-color: rgb(208, 189, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.frm button{
+    background-color: rgb(255, 255, 255);
+    
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.frm button:hover{
+    background-color: red;
+    color: white;
+}
+
+.frm .fa-solid{
+    align-self: center;
+    padding: 10px 20px;
+    color: #000000;
+}
+
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 15px;
+    
+    
+}
+
+li{
+    padding-inline:  20px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    
+}
+
+
+li:hover{
+    background-color:red;
+    color: whitesmoke;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+/* NAV BAR END */
+
+
+
+/* BOOKS DISPLAY */
+
+.sec{
+    margin-top: 60px;
+    padding: 15px 5%;
+    margin-left: 60px;
+}
+
+.products{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+
+.products .card{
+    width: 90%;
+    /* background-color: #dba9eb; */
+    background-color: rgb(208, 189, 215); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 60px;
+    height: 450px;
+    cursor: pointer;
+}
+
+/* .products .card:hover{
+    transform: scale(1.1);
+    transition: .9s;
+    
+} */
+
+.book-img .txt-container{
+    height: 320px;
+    /* border: solid black; */
+    width: 69%;
+    overflow: auto;
+    float: right;
+    margin: 25px 0 0 60px;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+.book-img{
+    display: flex;
+    /* flex-direction: row; */
+
+}
+
+
+.products .card img{
+
+    height: 380px;
+    margin:25px 0 0 25px ;
+    width: 25%;
+    border-radius: 15px; 
+}
+
+.card  .buy-btn{
+    position: absolute;
+    /* display: flex; */
+    font-size: 13px;
+    background-color: red;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid red;
+    border-radius: 20px;
+    border: none;
+    margin-left: 130vh;
+    margin-top:-30px;
+
+}
+
+.card  .buy-btn:hover{
+    cursor: pointer;
+    background-color: red;
+    color: black;
+    border: none;}
+/* .products .card img:hover{
+    filter: blur(1px);
+} */
+
+/* .products .card .book-desc{
+    padding: 5px 20px;
+    color: #424144;
+    opacity: 0.8;
+}
+
+.products .card .book-title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.products .card .book-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.products .card .book-box .price{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+.products .card .book-box .buy-btn{
+    font-size: 13px;
+    background-color: red;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid red;
+    border-radius: 20px;
+    border: none;
+}
+
+.products .card .book-box .buy-btn:hover{
+    cursor: pointer;
+    background-color: red;
+    color: black;
+    border: none;
+
+} */
+
